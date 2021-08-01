@@ -52,6 +52,7 @@ module "appd-platform-security-groups" {
 #   depends_on = [module.appd-aurora-database-cluster]
 # }
 
+# # EC2 instance where the EC, Platform and Controller are going to be installed.
 # module "appd-platform-and-controller"{
 #   source = "./ec2-instance"
 #   depends_on = [module.appd-aurora-db-root-user]
@@ -64,21 +65,19 @@ module "appd-platform-security-groups" {
 
 
 # #These are the output variables from the creation of our resources so we have then handy
-# output "Final_Aurora_DB_Endpoint" {
-#   value = ???
 
-# output "Final_ip" {
+# output "final_aurora_db_endpoint" {
 #   value = ???
 # }
-
-# output "Final_public_dns" {
+# output "ec2_instance_final_public_dns" {
 #   value = ??
 # }
 
-# output "Final_private_dns" {
+# output "ec2_instance_final_private_dns" {
 #   value = ??
 # }
-# output "Final_private_ip" {
+
+# output "ec2_instance_final_public_ip" {
 #   value = ??
 # }
 

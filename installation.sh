@@ -18,11 +18,11 @@ echo ".................................Change directory to /home/ec2-user/appdyn
 echo ".................................Your directory is: " $(pwd) >> ${logfile}
 
 echo ".................................Start to install platform.................." >> ${logfile}
-sudo -u ec2-user ./platform-admin.sh create-platform --name TerraformPlarform --installation-dir /home/ec2-user/appdynamics/platform/product >> ${logfile}
+sudo -u ec2-user ./platform-admin.sh create-platform --name TerraformPlatform --installation-dir /home/ec2-user/appdynamics/platform/product >> ${logfile}
 
 #add new host
 echo ".................................Add new host.................." >> ${logfile}
-sudo -u ec2-user ./platform-admin.sh add-hosts --platform-name TerraformPlarform --hosts localhost >> ${logfile}
+sudo -u ec2-user ./platform-admin.sh add-hosts --platform-name TerraformPlatform --hosts localhost >> ${logfile}
 echo ".................................Finish adding host.................." >> ${logfile}
 
 #We copy the license file
@@ -33,6 +33,6 @@ mv /home/ec2-user/license.lic /home/ec2-user/appdynamics/platform/product/contro
 
 echo ".................................Send controller job to EC using aurora DB ........................." >> ${logfile}
 #install controller using aurora
-./platform-admin.sh submit-job --platform-name TerraformPlarform --service controller --job install --args controllerProfile=demo controllerPrimaryHost=${Hostname} controllerTenancyMode=single controllerRootUserPassword="appd" mysqlRootPassword="appdappd" controllerAdminUsername="appd" controllerAdminPassword="appd" databaseType=Aurora controllerDBPort=3388 controllerDBHost=$1 >> ${logfile}
+./platform-admin.sh submit-job --platform-name TerraformPlatform --service controller --job install --args controllerProfile=demo controllerPrimaryHost=${Hostname} controllerTenancyMode=single controllerRootUserPassword="appd" mysqlRootPassword="appdappd" controllerAdminUsername="appd" controllerAdminPassword="appd" databaseType=Aurora controllerDBPort=3388 controllerDBHost=$1 >> ${logfile}
 
 echo ".................................Finish controller job to EC using aurora DB ........................." >> ${logfile}

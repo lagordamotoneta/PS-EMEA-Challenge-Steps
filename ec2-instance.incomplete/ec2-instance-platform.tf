@@ -33,7 +33,7 @@
 #   key_name               = ??
 #   vpc_security_group_ids = [var.instance_sec_group_id]
 #   count                  = 1
-#   user_data              = data.template_file.installer.rendered
+#   user_data              = ??
   
   
 #   # Copy in the bash script we want to execute.
@@ -65,17 +65,15 @@
 
 # #We need to make available the created resources' ids as outputs for them to be available in the root module
 
-# output "appd-platform_ip" {
+# output "appd_platform_ip" {
 #   value = aws_instance.appd-platform.public_ip
 # }
-# output "appd-platform_public_dns" {
+# output "appd_platform_public_dns" {
 #   value = ??
 # }
 
-# output "appd-platform_private_dns" {
+# output "appd_platform_private_dns" {
 #   value = ??
 # }
-# output "appd-platform_private_ip" {
-#   value = ??
-# }
+
 

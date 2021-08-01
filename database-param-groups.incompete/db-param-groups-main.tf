@@ -7,7 +7,20 @@
 # # Uncomment the below and is strongly suggested that you do not change the names and refer them in the next steps
 
 # resource "aws_db_parameter_group" "appd-db-parameter-group" {
+    # name    = "Controller-Aurora-DB-Params"
+    # family  = "aurora-mysql5.7"
 
+    # parameter {
+    #     name = "innodb_file_format"
+    #     value = "Barracuda"
+    #     apply_method = "pending-reboot"
+    # }
+
+    # parameter {
+    #     name = "innodb_large_prefix"
+    #     value = "1"
+    #     apply_method = "pending-reboot"
+    # }
 #}
 
 
@@ -17,7 +30,14 @@
 
 
 # resource "aws_rds_cluster_parameter_group" "appd-db-cluster-parameter-group" {
+    # name    = "Controller-Aurora-DB-Cluster-Params" 
+    # family  = "aurora-mysql5.7"
 
+    # parameter {
+    #     name = "character_set_client"
+    #     value = "utf8"
+    #     apply_method = "pending-reboot"
+    # }
 # }
 
 # #--------------------------------------------------------------------------------

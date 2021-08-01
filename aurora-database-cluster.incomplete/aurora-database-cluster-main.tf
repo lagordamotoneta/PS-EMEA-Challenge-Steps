@@ -12,16 +12,12 @@
 #   master_username    = ??
 #   master_password    = ??
 #   port               = ???<make sure you use the correct port! this is a hint!>
-#   vpc_security_group_ids          = ???
+#   vpc_security_group_ids          = [???]
 #   skip_final_snapshot             = true
 #   storage_encrypted               = true
 #   db_cluster_parameter_group_name = var.db_cluster_param_group_id
-
 # }
 
-# output "rds_cluster_endpoint" {
-#   value = ???
-# }
 
 # #Instance
 
