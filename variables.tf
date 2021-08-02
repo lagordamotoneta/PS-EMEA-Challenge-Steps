@@ -10,7 +10,7 @@ variable "aurora_db_username" {
   type= string
 }
 
-variable "aurorda_db_password" {
+variable "aurora_db_password" {
   type= string
 }
 

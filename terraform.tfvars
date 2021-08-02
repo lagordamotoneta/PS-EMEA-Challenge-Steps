@@ -3,7 +3,7 @@
 #Variables for Aurora Database and the creation of the root user.
 aurora_db_username = "admin"
 
-aurorda_db_password = "appdappd"
+aurora_db_password = "appdappd"
 
 #Variables related to EC2 instance
 myRegion = "eu-west-2"

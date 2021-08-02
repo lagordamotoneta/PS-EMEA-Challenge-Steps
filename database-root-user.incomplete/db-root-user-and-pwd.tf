@@ -2,7 +2,7 @@
 #---------------Create DB root USER-------------------------------------------
 #--------------------------------------------------------------------------------
 
-# #Please note tha we need to make the resource available in the root module as well as in the module itself (here)
+# #Please note that we need to make the provider available in the root module as well as in the module itself (here)
 # terraform {
 #   required_providers {
 #     mysql = {
@@ -12,13 +12,15 @@
 #   }
 # }
 
+# # Create user
+
 # resource "mysql_user" "root" {
-#   user               = "root"
-#   host               = "%"
+#   user               = ??
+#   host               = ??
 #   plaintext_password = "appdappd"
 # }
 
-# #We have facilitated the grants that are needed for the user.
+# # Grant the user with the needed. We have facilitated the grants that are needed for the user.
 # resource "mysql_grant" "rootGrant" {
 #   user       = "${mysql_user.root.user}"
 #   host       = "${mysql_user.root.host}"

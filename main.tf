@@ -14,7 +14,7 @@ provider "aws"{
 
 # provider "mysql" {
 
-#   endpoint = "${<the output of the db endpoint>}:${the output of the DB port!}"
+#   endpoint = "${endpoint??}:${DB port?}"
 #   username = ??
 #   password = ??
 # }
@@ -64,7 +64,7 @@ module "appd-platform-security-groups" {
 # }
 
 
-# #These are the output variables from the creation of our resources so we have then handy
+# #These are the output variables from the creation of our resources so we have then handy (finish defining the previous section first, the appd-platform-and-controller module )
 
 # output "final_aurora_db_endpoint" {
 #   value = ???

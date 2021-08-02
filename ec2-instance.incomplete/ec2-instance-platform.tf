@@ -32,7 +32,6 @@
 #   instance_type          = ??
 #   key_name               = ??
 #   vpc_security_group_ids = [var.instance_sec_group_id]
-#   count                  = 1
 #   user_data              = ??
   
   
