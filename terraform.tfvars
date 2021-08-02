@@ -10,6 +10,6 @@ myRegion = "eu-west-2"
 
 instance_type = "t3.large"
 
-key_name = "<the name of your key in AWS>"
+key_name = "the name of your key in AWS"
 
-key_file = "<yourKey.pem> file"
+key_file = "yourKey.pem"
