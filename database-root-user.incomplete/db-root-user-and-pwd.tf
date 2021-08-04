@@ -12,18 +12,13 @@
 #   }
 # }
 
-# # Create user
+# # Create user - Read the Terraform docs of the mysql provider selected and review the resource mysql_user. What is needed?
+# ---code to create the user must be here ---
 
-# resource "mysql_user" "root" {
-#   user               = ??
-#   host               = ??
-#   plaintext_password = "appdappd"
-# }
-
-# # Grant the user with the needed. We have facilitated the grants that are needed for the user.
+# # Grant the user with the needed using the mysql_grant resource. We have facilitated the privileges and database arguments for you.
 # resource "mysql_grant" "rootGrant" {
-#   user       = "${mysql_user.root.user}"
-#   host       = "${mysql_user.root.host}"
+#   user       = "${??}"
+#   host       = "${??}"
 #   database   = "*"
 #   privileges = ["SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, LOAD FROM S3, SELECT INTO S3"]
 #   grant      = true

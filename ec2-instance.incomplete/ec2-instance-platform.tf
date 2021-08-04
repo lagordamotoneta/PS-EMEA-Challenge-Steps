@@ -9,13 +9,8 @@
 #   owners      = ["amazon"]
 #   filter {
 #     name   = "name"
-#     values = ["amzn2-ami-*-x86_64-gp2"]
+#     values = ["amzn2-ami-hvm*"]
 #   }
-#   filter {
-#     name   = "virtualization-type"
-#     values = ["hvm"]
-#   }
-
 # }
 
 

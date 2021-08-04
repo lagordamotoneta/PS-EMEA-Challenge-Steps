@@ -30,7 +30,7 @@ module "appd-platform-security-groups" {
   
 }
 
-# #Database Params
+# #Database Parameter Groups
 # module "appd-database-param-groups"{
 #   source = "./database-param-groups"
 # }

@@ -1,4 +1,4 @@
-# #------------EC-------------------
+# #------------EC,Plaform,Controller-------------------
 resource "aws_security_group" "appd-platform-security-group-tf"{
     
     #this is the name in AWS
@@ -20,7 +20,7 @@ resource "aws_security_group" "appd-platform-security-group-tf"{
         cidr_blocks = ["0.0.0.0/0"] 
         ipv6_cidr_blocks = ["::/0"]
     }
-#Added as we have the whole platform running in one machine
+    #Added as we have the whole platform running in one machine
     ingress{
         from_port   = 8090
         to_port     = 8097

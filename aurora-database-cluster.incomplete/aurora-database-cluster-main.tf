@@ -11,7 +11,7 @@
 #   availability_zones              = ["${var.region}a", "${var.region}b", "${var.region}c"]
 #   master_username    = ??
 #   master_password    = ??
-#   port               = ???<make sure you use the correct port! this is a hint!>
+#   port               = ???<make sure you use the correct port read the AppD docs!>
 #   vpc_security_group_ids          = [???]
 #   skip_final_snapshot             = true
 #   storage_encrypted               = true
